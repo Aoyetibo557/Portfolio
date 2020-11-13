@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">O.A.G</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#top" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#aboutMe" onclick="toggleMenu();">About</a></li>
+            <li><a href="#myServices" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#myWorks" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#contactMe" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+   <section id="top" class="banner">
+       <div class="textBx">
+           <h2>Hello, i'm <br><span>Anuoluwapo Oyetibo.</span></h2>
+           <h3>I'm a Front-End Developer</h3>
+           <a href="#aboutMe" class="btn">About Me</a>
+
+       </div>
+   </section> 
+
+   <section id="aboutMe" class="about">
+       <div class="heading">
+        <h2>About Me</h2>
+       </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Welcome to my page.</h3>
+                <p> <b>A Little About Me.</b> My name is Anuoluwapo Oyetibo and 
+                    I am a developer based in New York. I was born and raised in 
+                    Nigeria. I moved to America at the age of 15  with my family for a better education.
+                <br><br>
+                    My passion for developing software started somewhere around my second year in college, I always had an intrest in computers and tech, 
+                    but it never fully dawned on me until I took a web development class. Ever since, I have fully immersed myself in an ocean of technology. By enrolling in multiple 
+                    development classes and taking on some development projects. I have gained much knowledge in the disclipline of software development and web development. 
+                    While there is still room to expand my knowledge I am eager to practicalize what I have learned thus far and build real world applications.
+            </p>
+            
+            </div>
+            <div class="w50">
+                <img src="./images/banner.jpg" alt="imageHolder" class="img" > 
+            </div>
+
+            <div class="socialMedia">
+                <span class="socialMediaBx">
+                    <a href="https://www.instagram.com/gahbby557" target="_blank"><i title="Instagram" class="fa fa-instagram"></i></a>
+                </span>
+                <span class="socialMediaBx">
+                    <a href="https://www.twitter.com/gabeoyetibo557" target="_blank"><i title="Twitter" class="fa fa-twitter"></i></a>
+                </span>
+                <span class="socialMediaBx">
+                    <a href="https://www.linkedin.com/in/anuoluwapo-oyetibo" target="_blank"><i title="LinkedIn" class="fa fa-linkedin"></i></a>
+                </span>
+                <span class="socialMediaBx">
+                    <a href="https://www.github.com/aoyetibo557" target="_blank"><i title="Github" class="fa fa-github"></i></a>
+                </span>
+            </div>
+        </div>
+   </section>
+
+    <section id="myServices" class="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+            <p>Below are The List of Services I Offer.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="./images/icon1.png" alt="icons">
+                <h2>Front-end Development</h2>
+                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                <h4>Languages I Speak:</h4>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="servicesBx">
+                <img src="./images/icon2.png" alt="icons">
+                <h2>Software Develpoment</h2>
+                <p> I dabble in IOS and Android app development. I would love to bring your app ideas to life.</p>
+
+                <h4>Languages I Speak:</h4>
+                <p>ReactJS, C++, Java</p>
+            </div>
+            
+            <div class="servicesBx">
+                <img src="./images/icon3.png" alt="icons">
+                <h2>Photography</h2>
+                <p>I offer quality and affordable Photography sessions. I love to use the camera to capture bring moments to life.</p>
+                
+                <h4>Dev Tools I Use:</h4>
+                <p>Photoshop, Lightroom, Adobe Creative CC</p>
+            </div>
+
+            <div class="servicesBx">
+                <img src="./images/icon4.png" alt="icons">
+                <h2>Content Writing</h2>
+                <p>I offer services to reiveiw, edit and re-write your web content for quality optimization and content priority.</p>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="myWorks" class="work">
+        <div class="heading">
+            <h2>Latest Projects</h2>
+            <p>These are Some of the Latest Projects I Have Had The Pleasure of Working On</p>
+        </div>
+        <div class="content">
+            <!-- Random Quote Generator Div -->
+            <div class="workBx">
+                <video src="./vids/RandomQuoteGen.mp4" loop muted autoplay></video>
+                <p><a title="Link" href="https://r-q-gen.herokuapp.com/" target="_blank">View</a></p>
+            </div>
+
+            <!-- TikTokCloneApp Div -->
+            <div class="workBx">
+                <video src="./vids/TikTokClone.mp4" loop muted autoplay></video>
+            </div>
+
+            <div class="workBx">
+                <video src="./vids/cal.mp4" loop muted autoplay></video>
+                <p><a title="Link" href="https://adv-web-calculator.herokuapp.com/" target="_blank">View</a></p>
+
+            </div>
+
+            <div class="workBx">
+                <video src="./vids/ChurchHmp.mp4" loop muted autoplay></video>
+            </div>
+            
+            <div class="workBx">
+                <video src="./vids/RPSvid.mp4" loop muted autoplay></video>
+                <p><a title="Link" href="https://rps-gameapp.herokuapp.com/" target="_blank">View</a></p>
+            </div>
+
+            <!-- Hidden Div Projects -->
+            <div id="hidden__projects" class="_hidden__projects">
+                <div class="workBx">
+                    <video src="./vids/workofart.mp4" loop muted autoplay></video>
+                    <p><a title="Link" href="https://w-o-a.herokuapp.com" target="_blank">View</a></p>
+                </div>
+
+                <div class="workBx">
+                    <video src="./vids/bookrental.mp4" loop muted autoplay></video>
+                </div>
+
+            </div>
+        </div>
+        <div class="heading">
+            <button id="_viewMore_btn" class="btn" onclick="showHiddenProject();">View More</button>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>What I Can Do!</p>
+        </div>
+        <div class="content">
+            <div class="skillsBx">
+                <div class="skillsBx-img">
+                    <img src="./images/frontEnd.png" alt="front-end Image">
+                </div>
+                <h3 class="skillsHeading">Front End</h3>
+                <ul>
+                    <li>HTML5/CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+
+            <div class="skillsBx">
+                <div class="skillsBx-img">
+                    <img src="./images/backend.png" alt="front-end Image">
+                </div>
+                <h3 class="skillsHeading">Back End</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>SQL/MySql</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="skillsBx">
+                <div class="skillsBx-img">
+                    <img src="./images/other.png" alt="front-end Image">
+                </div>
+                <h3 class="skillsHeading">Other</h3>
+                <ul>
+                    <li>C++</li>
+                    <li>JAVA</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="contactMe" class="contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+            <p>Let's work together! Feel free to reach out by fiiling out the form or sending me an <a href="mailto:aoyetibo@gmail.com">email</a>. I will be in touch.</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>98 Unknown Street, <br> TBD, TBD, <br>10001</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+000-000-0000</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <a href="mail">Aoyetibo@hotmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formBx">
+                <form method="POST" action="https://formspree.io/aoyetibo@gmail.com">
+                    <h3>Message Me</h3>
+                    <input required type="text" name="fullname" placeholder="FullName">
+                    <input required type="email" name="email" placeholder="Email">
+                    <textarea required name="msg-box" placeholder="Your Message"></textarea>
+                    <input type="submit" name="sub-btn" value="Send">
+    
+                </form>
+            </div>
+        </div> 
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2020 O.A.G Studios. All Right Reserved.</p>
+    </div>
+   <script src="./script.js"></script>
+</body>
+</html>

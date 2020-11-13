@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+
+}
+header.sticky .logo{
+    color: #111;
+    transition: 0.10s;
+
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header.sticky ul li a{
+    color: #111;
+    transition: 0.10s;
+
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(./images/banner2.jpg) black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-weight: 1.5em;
+    font-weight: 800;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx {
+    padding-right: 30px;
+}
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.contentBx p{
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+    /* height: 400px; */
+}
+
+.services{
+    background: #111;
+}
+.socialMedia{
+    padding: 5px;
+}
+.socialMediaBx,
+.socialMediaBx span a i {
+    padding: 9px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #111
+}
+
+.socialMediaBx span a:hover{
+    color: #2196f3;
+    cursor: pointer;
+    
+}
+.heading.white{
+    color: #fff;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBx:hover{
+    background: #2196f3;
+}
+.services .content .servicesBx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content .servicesBx h2{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.services .content .servicesBx p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.services .content .servicesBx h4{
+    padding: 7px;
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: #666;
+
+}
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .workBx{
+    width: 50%;
+    padding: 20px;
+}
+.work .content .workBx video{
+    max-width: 100%;
+}
+.work .content .workBx p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.work .content .workBx p a{
+    text-decoration: none;
+    font-style: italic;
+    color: #222;
+    font-size: 16px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.work .content .workBx p a:hover{
+    text-decoration: underline;
+    background: #0b487a;
+    color:#fff;
+    padding:4px;
+    transition: 0.5s;
+}
+.skills{
+    background: #f7f7f7;
+}
+.skills .content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skills .content .skillsBx{
+    /* max-width: calc(100% - 20px); */
+    width: 30%;
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.skills .content .skillsBx:hover{
+    /* filter: invert(1); */
+    cursor: pointer;
+    background: #111;
+}
+.skills .content .skillsBx .skillsBx-img{
+    border-bottom: 1px solid rgba(34, 34, 34, 0.178);
+    padding-bottom: 10px;
+    
+}
+.skills .content .skillsBx img{
+    max-width: 80px;
+    filter: invert(1);
+    position: relative;
+    left: 35%;    
+}
+.skills .content .skillsBx .skillsHeading{
+    padding: 5px;
+}
+
+.skills .content .skillsBx ul,
+.skills .content .skillsBx ul li::before{
+    list-style: none;
+    content: '✓ ';
+    font-weight: 700;
+}
+
+.skills .content .skillsBx ul li {
+    color: #fff;
+    /* font-style: italic; */
+    font-size: 16px;
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.skills .content .skillsBx h3{
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;font-weight: 600;
+    line-height: 1em;
+}
+.skills .content .skillsBx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact{
+    background: #111;
+}
+.formBx{
+    min-width: 60%;
+}
+
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.contactInfo p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+    color: #999
+}
+.formBx form input[type = "submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo{
+    min-width: 40%;
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactInfoBx .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+.copyright,
+.copyright p {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Micellanioues classes */
+._hidden__projects{
+    display: none;
+}
+
+
+
+/*RESPONSIVE*/
+@media (max-width: 991px ){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index:999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        
+    }
+    .menu.active{
+        left:0;
+    }
+    header ul li a{
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .toggle.active{
+        background: url(./images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border:none;
+    }
+    
+    .heading h2{
+        font-size: 24px;
+    }
+    .socialMedia{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        border-bottom: rgba(0, 0, 0, 0.267) solid 1px;        
+    }
+
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx{
+        margin: 10px;
+        cursor: progress;
+    }
+    .work .content .workBx{
+        width: 100%;
+        padding: 10px;
+    }
+    .skills .content .skillsBx{
+        /* max-width: calc(100% - 20px); */
+        width: 100%;
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    
+    .skills .content .skillsBx h3{
+        margin-top: 20px;
+    }
+    .contactInfo{
+        margin: 20px 0;
+        
+    }
+}
+@media (max-width:600px){
+    header,
+    header.sticky{
+        padding: 20px 20px;
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    .section{
+        padding: 100px 20px;
+    }
+    .socialMedia{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        border-bottom: rgba(0, 0, 0, 0.267) solid 1px;        
+    }
+}
